@@ -25,12 +25,10 @@ npm run dev
 # Production mode
 npm start
 
-FFBackend/
-├── config/          # Configuration files
+FFBackend/         # Configuration files
 ├── controllers/     # Route controllers
 ├── middleware/      # Custom middleware
 ├── models/         # Data models
-├── routes/         # API routes
-├── app.js          # Express app setup
-├── server.js       # Server entry point
+├── routes/         # API routes          # Express app setup
+├── index.js       # Server entry point
 └── package.json    # Dependencies
