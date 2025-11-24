@@ -26,7 +26,8 @@ const registrate = async (req,res)=>{
                 console.log(newUser.name,newUser.phone);
         res.status(201).json(
                 {   success:true,
-                    "Message":`New User ${newUser.name} ${newUser.phone} created Succesfully`
+                    "Message":"New Usercreated Succesfully", 
+                    id:`${newUser._id} ${newUser.name} ${newUser.phone}`
                 }
             );
         console.log(newUser)

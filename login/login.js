@@ -5,6 +5,9 @@ const access_Token = process.env.access_token;
 
 const login = async (req,res) =>{
     const {name,pwd} = req.body;
+
+    if( !name || !pwd ) res.status(400).json({'message':'Name and password are required.'})
+
     try {
         const user = await Userdb.findOne({name:name});
         if(!user){
